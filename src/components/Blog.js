@@ -5,7 +5,7 @@ const Blog = () => (
     <h2 className="section-header">Blog</h2>
     <article className="mb-4">
       <a href="https://blog.dhiraj.me/posts/blog1/" className="section-subheader text-blue-600 hover:underline inline-flex items-center">
-        How will E-Rupee fit into the digital payments space of India when we already have UPI?
+        How will E-Rupee fit into the digital payments space of India when we already have UPI ?
         &nbsp;<i className="fas fa-external-link-alt ml-1 inline-icon"></i>
       </a>
       <p className="text-sm text-gray-600">Posted On: 01/04/24</p>
