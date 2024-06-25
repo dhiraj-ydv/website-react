@@ -1,13 +1,299 @@
-body {
+/* General Styles */
+body, html {
+  font-family: 'Arial', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  color: #333;
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+header, footer {
+  width: 100%;
+}
+
+main {
+  flex: 1;
+  /* Remove padding */
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0; /* Add padding for spacing */
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between; /* Space out the logo and other elements */
+  align-items: center;
+  padding: 0 1rem; /* Add left and right padding */
+}
+
+header a {
+  color: #fff;
+  font-size: 2.5rem; /* Increased font size for the logo */
+  font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer .social-links a {
+  margin: 0 1rem; /* Increase space between icons */
+}
+
+footer .social-links i {
+  width: 24px;
+  height: 24px;
+}
+
+/* Section Styles */
+section {
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+/* Remove margin between sections */
+section + section {
+  margin-top: 0;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+section p, section ul {
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+section ul li {
+  margin: 0.5rem 0;
+}
+
+.section-header {
+  font-size: 2rem; /* Set the font size for all section headers */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333; /* Set a consistent color */
+}
+
+.section-subheader {
+  font-size: 1.25rem;
+  font-weight: medium;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.section-content {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Contact Form Styles */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form .form-group {
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+form button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  list-style: none;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #f39c12;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-item {
+  padding: 2rem;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #f39c12;
+  border: 4px solid #fff;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-item:nth-child(odd)::after {
+  right: -12.5px;
+}
+
+.timeline-item:nth-child(even)::after {
+  left: -12.5px;
+}
+
+.timeline-item .date {
+  font-size: 1.2rem;
+  color: #f39c12;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item .institution {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timeline-item::after {
+    left: -8px; /* Align dots to the left of the line */
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    left: 0;
+    padding-left: 70px; /* Align items to the right of the line */
+  }
+}
+
+/* Additional Styles for Inline Icon */
+.inline-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+/* Remove top padding from h3 section headers */
+section h3 {
+  padding-top: 0;
+  margin-top: 0;
 }

@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import About from './components/About';
+import Blog from './components/Blog';
+import Contact from './components/Contact';
+import Links from './components/Links'; // Add the Links component
+import Footer from './components/Footer';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <main>
+        <About />
+        <Blog />
+        <Links /> {/* Add the Links section */}
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
