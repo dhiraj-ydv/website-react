@@ -2,7 +2,7 @@ import React from 'react';
 
 const Links = () => (
   <section id="links" className="bg-white p-4">
-    <h2 className="text-2xl font-semibold mb-4">Links</h2>
+    <h2 className="text-2xl font-semibold mb-4">LINKS</h2>
     <div className="space-y-4">
       <div>
         <h3 className="text-xl font-medium mb-2">Subdomains</h3>
