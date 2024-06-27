@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => (
   <section id="blog" className="p-4 bg-white">
-    <h2 className="section-header">Blog</h2>
+    <h2 className="section-header">BLOG</h2>
     <article className="mb-4">
       <a href="https://blog.dhiraj.me/posts/blog1/" className="section-subheader text-blue-600 hover:underline inline-flex items-center">
         How will E-Rupee fit into the digital payments space of India when we already have UPI ?
