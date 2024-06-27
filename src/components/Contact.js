@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => (
   <section id="contact" className="p-4 bg-white">
-    <h2 className="section-header">Contact</h2>
+    <h2 className="section-header">CONTACT</h2>
     <form action="https://formspree.io/f/mleqynkr" method="POST" className="max-w-lg mx-auto p-4 bg-gray-100 rounded-lg shadow-md">
       <div className="form-group mb-4">
         <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
