@@ -15,7 +15,7 @@ const About = () => (
       <p className="section-content">
         I'm enthusiastic about learning and discussing technology, polity and governance, 
         cosmology, sociology, and qualitative fundamental analysis. I also enjoy playing 
-        tactical FPS games and improving my skills in physical sports like badminton and 
+        tactical FPS games and improving my skills in athletic sports like badminton and 
         football. Feel free to explore my blog for more insights.
       </p>
       <div>
