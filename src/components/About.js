@@ -14,7 +14,7 @@ const About = () => (
       <h3 className="section-header">Hi, I'm Dhiraj Yadav!</h3>
       <p className="section-content">
         I'm enthusiastic about learning and discussing technology, polity and governance, 
-        cosmology, sociology, and qualitative fundamental analysis. I also enjoy gymming, playing AirBadminton, and playing tactical FPS games. Feel free to explore my blog for more insights.
+        cosmology, sociology, and qualitative fundamental analysis. I also enjoy Gymming, playing AirBadminton, and playing Tactical FPS Games. Feel free to explore my blog for more insights.
       </p>
       <div>
         <h4 className="section-subheader">EDUCATION</h4>
